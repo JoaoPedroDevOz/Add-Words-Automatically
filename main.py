@@ -31,13 +31,3 @@ def register(arq, name='unknown'):
         else:
             print(f'Add a new register {name}')
             op.close()
-
-
-def keeping(option):
-    while option != 'N':
-        keeping(option)
-        while option not in 'YN':
-            keeping(option)
-            if option == 'N':
-                break
-    return option
